@@ -1,6 +1,6 @@
 
 euler1: euler1.o
-	gcc -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:
 	rm -f *.o euler1

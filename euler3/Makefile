@@ -1,9 +1,9 @@
 
 euler3: helper.o euler3.o
-	gcc -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS)
 
 test: euler3_test.o helper.o
-	gcc -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS)
 	./test
 	rm $@
 
