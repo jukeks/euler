@@ -22,7 +22,7 @@ uint32_t next_fibonacci_number(fibonacci_history_t *history) {
 	return next;
 }
 
-uint64_t sum_of_fibonacci_numbers_divisible_by_two_under(uint64_t under) {
+uint64_t sum_of_even_fibonacci_numbers_under(uint64_t under) {
 	// In the assignment, series starts with 1, 2
 	fibonacci_history_t history = {1, 1};
 	
@@ -37,6 +37,6 @@ uint64_t sum_of_fibonacci_numbers_divisible_by_two_under(uint64_t under) {
 }
 
 int main(void) {
-	uint64_t sum = sum_of_fibonacci_numbers_divisible_by_two_under(MAX_FIB_NUM);
+	uint64_t sum = sum_of_even_fibonacci_numbers_under(MAX_FIB_NUM);
 	printf("Sum of Fibonacci numbers divisible by two under 4M: %"PRIu64"\n", sum);
 }
