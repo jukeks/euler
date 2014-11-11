@@ -1,0 +1,6 @@
+
+CC = gcc
+CFLAGS = -Wall -Wextra -pedantic -std=c99
+
+%.o: %.c
+	$(CC) -c -o $@ $< $(CFLAGS)

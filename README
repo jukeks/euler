@@ -1,0 +1,25 @@
+INTRODUCTION
+------------
+
+This folder contains solutions to Project Euler's problems 1, 2, and 3.
+
+COMPILATION
+-----------
+
+Each subfolder has a Makefile, so running 
+
+$ make
+
+in a subfolder will produce an executable named as the subfolder.
+
+TESTS
+-----
+
+Problem 3 (in folder euler3) has tests runnable by
+
+$ make test
+
+AUTHOR
+------
+
+Jukka-Pekka Virtanen <virtanen@jukk.is>
